@@ -85,3 +85,65 @@ public class Main {
         System.out.println(task5.calculateFactorial());*/
     }
 }
+
+
+
+
+package ru.mirea.kvbo1.toryanik;
+
+public class Factorial {
+    private int number;
+    private int sum = 1;
+
+    public int getNumber() {
+        return number;
+    }
+
+    public void setNumber(int number) {
+        this.number = number;
+    }
+    public int calculateFactorial() {
+        for(int ind = 1; ind <= number; ind++) {
+            sum *= ind;
+        }
+        return sum;
+    }
+    public Factorial(int number) {
+        this.number = number;
+    }
+}
+
+
+
+
+package ru.mirea.kvbo1.toryanik;
+
+public class Square
+{
+    private double side;
+
+    public double getSide() {
+        return side;
+    }
+
+    public void setSide(double side) {
+        this.side = side;
+    }
+
+    public Square(double side) {
+        this.side = side;
+    }
+
+    @Override
+    public String toString() {
+        return "Square{" +
+                "side=" + side +
+                '}';
+    }
+    public  double GetArea()
+    {
+        return side * side;
+
+    }
+}
+
